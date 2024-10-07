@@ -1,0 +1,26 @@
+aside{
+    background-color: var(--itens-background);
+    border-radius: 10px;
+    height: 100%;
+    padding: 40px 16px;
+    text-align: center;
+}
+.link_list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    align-items: center;
+    list-style-type: none;
+}
+.link_list li a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--segundary-color);
+}
+.link_list li:first-of-type a{
+    color: var(--primary-color);
+}

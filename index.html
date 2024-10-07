@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/rootStyles.css">
+    <title>CodeConnect</title>
+</head>
+
+<body>
+    <aside>
+        <img src="./img/Logo.svg" alt="logo do Code Connect">
+        <nav>
+            <ul class="link_list">
+                <li><a href="#" class="hightlighted_link">Publicar</a></li>
+
+                <li><a href="#"><img src="./img/feed.svg" alt="imagem feed">feed</a></li>
+
+                <li><a href="#"><img src="./img/account_circle.svg" alt="imagem perfil">Perfil</a></li>
+
+                <li><a href="#"><img src="./img/info.svg" alt="imagem informações">Sobre nós</a></li>
+
+                <li><a href="#"><img src="./img/logout.svg" alt="imagem logout">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="img_upload_container">
+            <div class="img_container">
+                <img src="./img/imagem1.png" alt="" class="main_img">
+            </div>
+            <button class="upload_img" id="upload_btn">Carregar imagem</button>
+            <input type="file" id="upload" accept="image/" style="display: none"/>
+            <div class="img_name_container">
+                <p>image_projeto.png</p>
+                <img src="./img/close.svg" alt="fechar">
+            </div>
+        </div>
+        <div class="description_container">
+            <h2>Novo projeto</h2>
+            <form>
+                <div>
+                    <label for="name">Nome do Projeto</label>
+                    <input type="text" id="name" name="name"/>
+                </div>
+                <div>
+                    <label for="description">Descrição</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <div>
+                    <label for="tag">Tags</label>
+                    <input type="text" id="tag" name="tag">
+                </div>
+                <ul class="tag_list">
+                    <li>
+                        <p>Front-End</p>
+                        <img src="./img/close-black.svg" alt="fechar">
+                    </li>
+                </ul>
+                <div class="buttons_container">
+                    <button id="delete">Descartar</button>
+                    <button id="public">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

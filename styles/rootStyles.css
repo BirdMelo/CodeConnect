@@ -1,0 +1,38 @@
+@import url('./aside.css');
+@import url('./colors.css');
+@import url('./main.css');
+
+:root{
+    --background-color:#00090E;
+    --text-color:#E1E1E1;
+    --primary-color:#81FE88;
+    --segundary-color:#888888;
+    --tag-color:#171D1F;
+    --itens-background:#171D1F;
+    --font-family: "Prompt", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+
+.hightlighted_link{
+    border: 1px solid var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 8px;
+}

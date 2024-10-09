@@ -22,7 +22,8 @@ const main_img = document.querySelector('.main_img');
 const img_name = document.querySelector('.img_name_container p');
 
 upload.addEventListener('change', async (event) => {
-    const file = event.target.file[0];
+    console.log('chegou')
+    const file = event.target.files[0];
 
     if (file) {
         try {

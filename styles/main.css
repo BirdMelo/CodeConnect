@@ -29,6 +29,7 @@ form div input, textarea {
     border-radius: 4px;
     font-family: var(--font-family);
     line-height: 22.5px;
+    width: 100%;
 }
 form div input {
     height: 39px;

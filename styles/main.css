@@ -5,24 +5,60 @@ main{
     display: flex;
     gap: 24px;
 }
+
+/* IMAGE UPLOAD CONTAINER */
+.img_upload_container button{
+    margin: 1rem 0 0.5rem 0;
+    background-color: var(--itens-background);
+    border: 1px solid var(--segundary-color);
+    border-radius: 8px;
+    color: var(--segundary-color);
+    width: 100%;
+    padding: 12px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1.125rem;
+    position: relative;
+}
+.img_container{
+    height: auto;
+    padding: 24px 16px;
+    background-color: var(--segundary-color);
+    border-radius: 8px;
+}
+.main_img{
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.img_name_container{
+    display: flex;
+    gap: 8px;
+    color: var(--segundary-color);
+    font-size: 15px;
+}
+
+/* DESCRIPTION CONTAINER */
+.description_container{
+    width: 50%;
+}
 h2{
-    font-size: 26px;
-    margin-bottom: 40px;
+    font-size: 1.625rem;
+    margin-bottom: 2.5rem;
     font-weight: 600;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
 }
 form div label{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 1.125rem;
     display: block;
     margin-bottom: 8px;
 }
 form div input, textarea {
-    width: 100px;
     padding: 8px 16px;
     background-color: var(--segundary-color);
     border: none;
@@ -32,60 +68,17 @@ form div input, textarea {
     width: 100%;
 }
 form div input {
-    height: 39px;
+    height: 2.5rem;
 }
 textarea{
-    height: 161px;
+    height: 10rem;
 }
-.description_container{
-    width: 422px;
-}
-.main_img{
-    border-radius: 8px;
-    height: 100%;
-    object-fit: cover;
-}
-.img_container{
-    height: 368px;
-    padding: 24px 16px;
-    background-color: var(--segundary-color);
-    border-radius: 8px;
-}
-.img_upload_container button{
-    margin: 16px 0 8px 0;
-    background-color: var(--itens-background);
-    border: 1px solid var(--segundary-color);
-    border-radius: 8px;
-    color: var(--segundary-color);
-    width: 100%;
-    padding: 12px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 18px;
-    position: relative;
-}
-.img_upload_container button::after{
-    content: '';
-    position: absolute;
-    background-image: url('../img/upload.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
 
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 8px;
-}
-.img_name_container{
-    display: flex;
-    gap: 8px;
-    color: var(--segundary-color);
-    font-size: 15px;
-}
+/* TAGS */
 .tag_list{
     display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 .tag_list li{
     display: flex;
@@ -94,6 +87,24 @@ textarea{
     gap: 10px;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+/* BUTTONS */
+.img_upload_container button::after, #delete::after, #public::after{
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+.img_upload_container button::after{
+    background-image: url('../img/upload.svg');
 }
 .buttons_container{
     display: flex;
@@ -115,20 +126,31 @@ textarea{
     border: 1px solid var(--primary-color);
 }
 #delete::after{
-    content: "";
     background-image: url('../img/trash.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 8px;
 }
 #public{
     background-color: var(--primary-color);
+    border: none;
+    position: relative;
+}
+#public::after{
+    background-image: url('../img/arrow_forward2.svg');
+}
+
+/* RESPONSIVENESS */
+
+/* TABLET */
+@media screen and (max-width:1000px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: transparent;
+        padding-bottom: 10rem;
+    }
+    .img_upload_container{
+        width: 100%;
+    }
+    .description_container{
+        width: 100%;
+    }
 }

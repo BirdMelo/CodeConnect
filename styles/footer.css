@@ -1,0 +1,40 @@
+footer{
+    background-color: var(--itens-background);
+    position: fixed;
+    inset: auto 0 0 0;
+    padding: 40px 60px;
+}
+footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer nav ul li{
+    list-style-type: none;
+}
+footer nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 3.5rem;
+
+    text-decoration: none;
+    color: var(--segundary-color);
+}
+
+/* RESPONSIVENESS */
+
+/* TABLET */
+@media screen and (min-width: 1000px) {
+    footer{
+        display: none;
+    }
+}
+
+/* SMART PHONE */
+@media screen and (max-width:500px) {
+    footer{
+        padding: 1rem;
+    }
+}

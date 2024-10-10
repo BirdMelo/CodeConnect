@@ -1,5 +1,7 @@
+@import url('./header.css');
 @import url('./aside.css');
 @import url('./main.css');
+@import url('./footer.css');
 
 :root{
     --background-color:#00090E;
@@ -34,4 +36,26 @@ body{
     border: 1px solid var(--primary-color);
     padding: 12px 30px;
     border-radius: 8px;
+}
+input:focus, textarea:focus{
+    outline: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+/* RESPONSIVENESS */
+
+/* TABLET */
+@media screen and (max-width: 1000px) {
+    body{
+        flex-direction: column;
+        justify-content: start;
+        padding: 40px 60px;
+    }
+}
+
+/* SMART PHONE */
+@media screen and (max-width: 500px) {
+    body{
+        padding: 56px 0;
+    }
 }

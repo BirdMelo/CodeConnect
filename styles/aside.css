@@ -24,3 +24,12 @@ aside{
 .link_list li:first-of-type a{
     color: var(--primary-color);
 }
+
+/* RESPONSIVENESS */
+
+/* TABLET */
+@media screen and (max-width: 1000px) {
+    aside{
+        display: none;
+    }
+}

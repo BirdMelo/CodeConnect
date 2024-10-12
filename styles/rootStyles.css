@@ -41,6 +41,20 @@ input:focus, textarea:focus{
     outline: 2px solid var(--primary-color);
     box-shadow: none;
 }
+@keyframes shake {
+    0%{margin-right: 0px;}
+    25%{margin-right: 50px}
+    75%{margin-left: 50px; margin-right: 0px;}
+    100%{ margin: 0 0;}
+
+}
+.error{
+    color: red;
+    font-size: 1rem;
+    font-weight:300;
+    text-align: center;
+    animation: shake 0.1s 5;
+}
 
 /* RESPONSIVENESS */
 

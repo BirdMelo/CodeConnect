@@ -22,8 +22,11 @@
         </div>
         <div id="search_tag">
             <div class="search_container">
-                <span></span>
-                <input type="text" id="search_input" placeholder="Digite o que você procura"/>
+                <div>
+                    <span></span>
+                    <input type="text" id="search_input" placeholder="Digite o que você procura"/>
+                </div>
+                <p class="error" id="search_error">*tag inváladia</p>
             </div>
             <ul></ul>
             <button>Limpar tudo</button>
@@ -71,6 +74,7 @@
                 <div>
                     <label for="tag">Tags</label>
                     <input type="text" id="tag" name="tag">
+                    <p class="error" id="error_tag">*tag inváladia</p>
                 </div>
                 <ul class="tag_list"></ul>
 
@@ -94,7 +98,7 @@
             </ul>
         </nav>
     </footer>
-    <script src="scripts.js"></script>
+    <script type="module" src="./scripts/mainScript.js"></script>
 </body>
 
 </html>

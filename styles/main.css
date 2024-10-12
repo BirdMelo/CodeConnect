@@ -51,7 +51,7 @@ h2{
 form{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 form div label{
     font-size: 1.125rem;
@@ -73,12 +73,16 @@ form div input {
 textarea{
     height: 10rem;
 }
-
 /* TAGS */
+#error_tag{
+    display: none;
+    margin-top: 0.25rem;
+}
 .tag_list{
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+    display: none;
 }
 .tag_list li{
     display: flex;
